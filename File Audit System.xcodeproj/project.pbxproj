@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD1C1D3A2BF81274008FD15E /* libbsm.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1C1D392BF80E59008FD15E /* libbsm.tbd */; };
+		FD1C1D3C2BFA68E3008FD15E /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C1D3B2BFA68E3008FD15E /* UserDefaultsStorage.swift */; };
+		FD37476F2BF78F0C0022A61E /* AuditModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37476E2BF78F0C0022A61E /* AuditModel.swift */; };
+		FD3747742BF78F7E0022A61E /* AuditSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3747722BF78F7E0022A61E /* AuditSettingsViewController.swift */; };
+		FD3747752BF78F7E0022A61E /* AuditSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3747732BF78F7E0022A61E /* AuditSettingsViewController.xib */; };
+		FD37477B2BF7C7B90022A61E /* ExtensionClientConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37477A2BF7C7B90022A61E /* ExtensionClientConnection.swift */; };
+		FD37477E2BF7E0280022A61E /* ExtensionHostConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37477C2BF7E0280022A61E /* ExtensionHostConnection.swift */; };
+		FD37477F2BF7E0280022A61E /* FileAuditEndpointSecurityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD37477D2BF7E0280022A61E /* FileAuditEndpointSecurityClient.swift */; };
+		FDF603922BF39A98006072DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603912BF39A98006072DF /* AppDelegate.swift */; };
+		FDF603942BF39A99006072DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDF603932BF39A99006072DF /* Assets.xcassets */; };
+		FDF603972BF39A99006072DF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FDF603962BF39A99006072DF /* Base */; };
+		FDF603A22BF39A99006072DF /* File_Audit_SystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603A12BF39A99006072DF /* File_Audit_SystemTests.swift */; };
+		FDF603AC2BF39A99006072DF /* File_Audit_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603AB2BF39A99006072DF /* File_Audit_SystemUITests.swift */; };
+		FDF603AE2BF39A99006072DF /* File_Audit_SystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603AD2BF39A99006072DF /* File_Audit_SystemUITestsLaunchTests.swift */; };
+		FDF603C12BF39AB3006072DF /* libEndpointSecurity.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF603C02BF39AB3006072DF /* libEndpointSecurity.tbd */; };
+		FDF603C42BF39AB3006072DF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603C32BF39AB3006072DF /* main.swift */; };
+		FDF603C92BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension in Embed System Extensions */ = {isa = PBXBuildFile; fileRef = FDF603BE2BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDF603CF2BF63F71006072DF /* ExtensionConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603CE2BF63F71006072DF /* ExtensionConnection.swift */; };
+		FDF603D02BF63F71006072DF /* ExtensionConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF603CE2BF63F71006072DF /* ExtensionConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDF6039E2BF39A99006072DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF603862BF39A98006072DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF6038D2BF39A98006072DF;
+			remoteInfo = "File Audit System";
+		};
+		FDF603A82BF39A99006072DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF603862BF39A98006072DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF6038D2BF39A98006072DF;
+			remoteInfo = "File Audit System";
+		};
+		FDF603C72BF39AB3006072DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDF603862BF39A98006072DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDF603BD2BF39AB3006072DF;
+			remoteInfo = "File Audit Endpoint Security Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDF603CD2BF39AB3006072DF /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				FDF603C92BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension in Embed System Extensions */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD1C1D392BF80E59008FD15E /* libbsm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbsm.tbd; path = usr/lib/libbsm.tbd; sourceTree = SDKROOT; };
+		FD1C1D3B2BFA68E3008FD15E /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		FD37476E2BF78F0C0022A61E /* AuditModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditModel.swift; sourceTree = "<group>"; };
+		FD3747722BF78F7E0022A61E /* AuditSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditSettingsViewController.swift; sourceTree = "<group>"; };
+		FD3747732BF78F7E0022A61E /* AuditSettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuditSettingsViewController.xib; sourceTree = "<group>"; };
+		FD37477A2BF7C7B90022A61E /* ExtensionClientConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionClientConnection.swift; sourceTree = "<group>"; };
+		FD37477C2BF7E0280022A61E /* ExtensionHostConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionHostConnection.swift; sourceTree = "<group>"; };
+		FD37477D2BF7E0280022A61E /* FileAuditEndpointSecurityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAuditEndpointSecurityClient.swift; sourceTree = "<group>"; };
+		FDF6038E2BF39A98006072DF /* File Audit System.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Audit System.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF603912BF39A98006072DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDF603932BF39A99006072DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDF603962BF39A99006072DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FDF603982BF39A99006072DF /* File_Audit_System.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = File_Audit_System.entitlements; sourceTree = "<group>"; };
+		FDF6039D2BF39A99006072DF /* File Audit SystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "File Audit SystemTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF603A12BF39A99006072DF /* File_Audit_SystemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File_Audit_SystemTests.swift; sourceTree = "<group>"; };
+		FDF603A72BF39A99006072DF /* File Audit SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "File Audit SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF603AB2BF39A99006072DF /* File_Audit_SystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File_Audit_SystemUITests.swift; sourceTree = "<group>"; };
+		FDF603AD2BF39A99006072DF /* File_Audit_SystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File_Audit_SystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDF603BE2BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; includeInIndex = 0; path = "ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF603C02BF39AB3006072DF /* libEndpointSecurity.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libEndpointSecurity.tbd; path = usr/lib/libEndpointSecurity.tbd; sourceTree = SDKROOT; };
+		FDF603C32BF39AB3006072DF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FDF603C52BF39AB3006072DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDF603C62BF39AB3006072DF /* File_Audit_Endpoint_Security_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = File_Audit_Endpoint_Security_Extension.entitlements; sourceTree = "<group>"; };
+		FDF603CE2BF63F71006072DF /* ExtensionConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDF6038B2BF39A98006072DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF6039A2BF39A99006072DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603A42BF39A99006072DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603BB2BF39AB3006072DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603C12BF39AB3006072DF /* libEndpointSecurity.tbd in Frameworks */,
+				FD1C1D3A2BF81274008FD15E /* libbsm.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDF603852BF39A98006072DF = {
+			isa = PBXGroup;
+			children = (
+				FDF603902BF39A98006072DF /* File Audit System */,
+				FDF603A02BF39A99006072DF /* File Audit SystemTests */,
+				FDF603AA2BF39A99006072DF /* File Audit SystemUITests */,
+				FDF603C22BF39AB3006072DF /* File Audit Endpoint Security Extension */,
+				FDF603BF2BF39AB3006072DF /* Frameworks */,
+				FDF6038F2BF39A98006072DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDF6038F2BF39A98006072DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDF6038E2BF39A98006072DF /* File Audit System.app */,
+				FDF6039D2BF39A99006072DF /* File Audit SystemTests.xctest */,
+				FDF603A72BF39A99006072DF /* File Audit SystemUITests.xctest */,
+				FDF603BE2BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDF603902BF39A98006072DF /* File Audit System */ = {
+			isa = PBXGroup;
+			children = (
+				FDF603912BF39A98006072DF /* AppDelegate.swift */,
+				FD37476E2BF78F0C0022A61E /* AuditModel.swift */,
+				FDF603CE2BF63F71006072DF /* ExtensionConnection.swift */,
+				FD37477A2BF7C7B90022A61E /* ExtensionClientConnection.swift */,
+				FD3747722BF78F7E0022A61E /* AuditSettingsViewController.swift */,
+				FD3747732BF78F7E0022A61E /* AuditSettingsViewController.xib */,
+				FDF603932BF39A99006072DF /* Assets.xcassets */,
+				FD1C1D3B2BFA68E3008FD15E /* UserDefaultsStorage.swift */,
+				FDF603952BF39A99006072DF /* MainMenu.xib */,
+				FDF603982BF39A99006072DF /* File_Audit_System.entitlements */,
+			);
+			path = "File Audit System";
+			sourceTree = "<group>";
+		};
+		FDF603A02BF39A99006072DF /* File Audit SystemTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF603A12BF39A99006072DF /* File_Audit_SystemTests.swift */,
+			);
+			path = "File Audit SystemTests";
+			sourceTree = "<group>";
+		};
+		FDF603AA2BF39A99006072DF /* File Audit SystemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF603AB2BF39A99006072DF /* File_Audit_SystemUITests.swift */,
+				FDF603AD2BF39A99006072DF /* File_Audit_SystemUITestsLaunchTests.swift */,
+			);
+			path = "File Audit SystemUITests";
+			sourceTree = "<group>";
+		};
+		FDF603BF2BF39AB3006072DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD1C1D392BF80E59008FD15E /* libbsm.tbd */,
+				FDF603C02BF39AB3006072DF /* libEndpointSecurity.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDF603C22BF39AB3006072DF /* File Audit Endpoint Security Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDF603C32BF39AB3006072DF /* main.swift */,
+				FD37477C2BF7E0280022A61E /* ExtensionHostConnection.swift */,
+				FD37477D2BF7E0280022A61E /* FileAuditEndpointSecurityClient.swift */,
+				FDF603C52BF39AB3006072DF /* Info.plist */,
+				FDF603C62BF39AB3006072DF /* File_Audit_Endpoint_Security_Extension.entitlements */,
+			);
+			path = "File Audit Endpoint Security Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDF6038D2BF39A98006072DF /* File Audit System */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF603B12BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit System" */;
+			buildPhases = (
+				FDF6038A2BF39A98006072DF /* Sources */,
+				FDF6038B2BF39A98006072DF /* Frameworks */,
+				FDF6038C2BF39A98006072DF /* Resources */,
+				FDF603CD2BF39AB3006072DF /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF603C82BF39AB3006072DF /* PBXTargetDependency */,
+			);
+			name = "File Audit System";
+			productName = "File Audit System";
+			productReference = FDF6038E2BF39A98006072DF /* File Audit System.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDF6039C2BF39A99006072DF /* File Audit SystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF603B42BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit SystemTests" */;
+			buildPhases = (
+				FDF603992BF39A99006072DF /* Sources */,
+				FDF6039A2BF39A99006072DF /* Frameworks */,
+				FDF6039B2BF39A99006072DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF6039F2BF39A99006072DF /* PBXTargetDependency */,
+			);
+			name = "File Audit SystemTests";
+			productName = "File Audit SystemTests";
+			productReference = FDF6039D2BF39A99006072DF /* File Audit SystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDF603A62BF39A99006072DF /* File Audit SystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF603B72BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit SystemUITests" */;
+			buildPhases = (
+				FDF603A32BF39A99006072DF /* Sources */,
+				FDF603A42BF39A99006072DF /* Frameworks */,
+				FDF603A52BF39A99006072DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF603A92BF39A99006072DF /* PBXTargetDependency */,
+			);
+			name = "File Audit SystemUITests";
+			productName = "File Audit SystemUITests";
+			productReference = FDF603A72BF39A99006072DF /* File Audit SystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FDF603BD2BF39AB3006072DF /* File Audit Endpoint Security Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF603CA2BF39AB3006072DF /* Build configuration list for PBXNativeTarget "File Audit Endpoint Security Extension" */;
+			buildPhases = (
+				FDF603BA2BF39AB3006072DF /* Sources */,
+				FDF603BB2BF39AB3006072DF /* Frameworks */,
+				FDF603BC2BF39AB3006072DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "File Audit Endpoint Security Extension";
+			productName = "File Audit Endpoint Security Extension";
+			productReference = FDF603BE2BF39AB3006072DF /* ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDF603862BF39A98006072DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FDF6038D2BF39A98006072DF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FDF6039C2BF39A99006072DF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FDF6038D2BF39A98006072DF;
+					};
+					FDF603A62BF39A99006072DF = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FDF6038D2BF39A98006072DF;
+					};
+					FDF603BD2BF39AB3006072DF = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FDF603892BF39A98006072DF /* Build configuration list for PBXProject "File Audit System" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDF603852BF39A98006072DF;
+			productRefGroup = FDF6038F2BF39A98006072DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDF6038D2BF39A98006072DF /* File Audit System */,
+				FDF6039C2BF39A99006072DF /* File Audit SystemTests */,
+				FDF603A62BF39A99006072DF /* File Audit SystemUITests */,
+				FDF603BD2BF39AB3006072DF /* File Audit Endpoint Security Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDF6038C2BF39A98006072DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603942BF39A99006072DF /* Assets.xcassets in Resources */,
+				FDF603972BF39A99006072DF /* Base in Resources */,
+				FD3747752BF78F7E0022A61E /* AuditSettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF6039B2BF39A99006072DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603A52BF39A99006072DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603BC2BF39AB3006072DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDF6038A2BF39A98006072DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603922BF39A98006072DF /* AppDelegate.swift in Sources */,
+				FD37477B2BF7C7B90022A61E /* ExtensionClientConnection.swift in Sources */,
+				FD3747742BF78F7E0022A61E /* AuditSettingsViewController.swift in Sources */,
+				FD37476F2BF78F0C0022A61E /* AuditModel.swift in Sources */,
+				FD1C1D3C2BFA68E3008FD15E /* UserDefaultsStorage.swift in Sources */,
+				FDF603CF2BF63F71006072DF /* ExtensionConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603992BF39A99006072DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603A22BF39A99006072DF /* File_Audit_SystemTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603A32BF39A99006072DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603AC2BF39A99006072DF /* File_Audit_SystemUITests.swift in Sources */,
+				FDF603AE2BF39A99006072DF /* File_Audit_SystemUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF603BA2BF39AB3006072DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF603C42BF39AB3006072DF /* main.swift in Sources */,
+				FDF603D02BF63F71006072DF /* ExtensionConnection.swift in Sources */,
+				FD37477E2BF7E0280022A61E /* ExtensionHostConnection.swift in Sources */,
+				FD37477F2BF7E0280022A61E /* FileAuditEndpointSecurityClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDF6039F2BF39A99006072DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF6038D2BF39A98006072DF /* File Audit System */;
+			targetProxy = FDF6039E2BF39A99006072DF /* PBXContainerItemProxy */;
+		};
+		FDF603A92BF39A99006072DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF6038D2BF39A98006072DF /* File Audit System */;
+			targetProxy = FDF603A82BF39A99006072DF /* PBXContainerItemProxy */;
+		};
+		FDF603C82BF39AB3006072DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDF603BD2BF39AB3006072DF /* File Audit Endpoint Security Extension */;
+			targetProxy = FDF603C72BF39AB3006072DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDF603952BF39A99006072DF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDF603962BF39A99006072DF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDF603AF2BF39A99006072DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDF603B02BF39A99006072DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FDF603B22BF39A99006072DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "File Audit System/File_Audit_System.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FDF603B32BF39A99006072DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "File Audit System/File_Audit_System.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-System";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FDF603B52BF39A99006072DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-SystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/File Audit System.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/File Audit System";
+			};
+			name = Debug;
+		};
+		FDF603B62BF39A99006072DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-SystemTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/File Audit System.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/File Audit System";
+			};
+			name = Release;
+		};
+		FDF603B82BF39A99006072DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-SystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "File Audit System";
+			};
+			name = Debug;
+		};
+		FDF603B92BF39A99006072DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-SystemUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "File Audit System";
+			};
+			name = Release;
+		};
+		FDF603CB2BF39AB3006072DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "File Audit Endpoint Security Extension/File_Audit_Endpoint_Security_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "File Audit Endpoint Security Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "File Audit Endpoint Security Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "The File Audit System requires the installation of a system extension to monitor and log access to files in the specified directories.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension";
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FDF603CC2BF39AB3006072DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "File Audit Endpoint Security Extension/File_Audit_Endpoint_Security_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GD325L6SWA;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "File Audit Endpoint Security Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "File Audit Endpoint Security Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSystemExtensionUsageDescription = "The File Audit System requires the installation of a system extension to monitor and log access to files in the specified directories.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension";
+				PRODUCT_NAME = "$(inherited)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDF603892BF39A98006072DF /* Build configuration list for PBXProject "File Audit System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF603AF2BF39A99006072DF /* Debug */,
+				FDF603B02BF39A99006072DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF603B12BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit System" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF603B22BF39A99006072DF /* Debug */,
+				FDF603B32BF39A99006072DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF603B42BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit SystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF603B52BF39A99006072DF /* Debug */,
+				FDF603B62BF39A99006072DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF603B72BF39A99006072DF /* Build configuration list for PBXNativeTarget "File Audit SystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF603B82BF39A99006072DF /* Debug */,
+				FDF603B92BF39A99006072DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF603CA2BF39AB3006072DF /* Build configuration list for PBXNativeTarget "File Audit Endpoint Security Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF603CB2BF39AB3006072DF /* Debug */,
+				FDF603CC2BF39AB3006072DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDF603862BF39A98006072DF /* Project object */;
+}
