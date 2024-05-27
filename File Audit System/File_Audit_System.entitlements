@@ -14,7 +14,7 @@
 	<true/>
 	<key>com.apple.security.temporary-exception.mach-lookup.global-name</key>
 	<array>
-		<string>$(TeamIdentifierPrefix)ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.xpc</string>
+		<string>ihorovechko.File-Audit-System.File-Audit-Endpoint-Security-Extension.xpc</string>
 	</array>
 </dict>
 </plist>

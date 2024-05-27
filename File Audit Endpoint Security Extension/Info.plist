@@ -3,6 +3,6 @@
 <plist version="1.0">
 <dict>
 	<key>NSEndpointSecurityMachServiceName</key>
-	<string>$(TeamIdentifierPrefix)$(PRODUCT_BUNDLE_IDENTIFIER).xpc</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER).xpc</string>
 </dict>
 </plist>
